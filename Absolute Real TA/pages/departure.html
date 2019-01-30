@@ -1,0 +1,85 @@
+
+    <div class="w-100 h-100 py-3" style="background-color:#F1F1F1">
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-md-3 p-2 text-center">
+            <a href="/">
+                <i class="fa fa-3x fa-search red" ></i>
+            </a>
+          </div>
+          <div class="col-md-3 p-2 text-center">
+            <a href="/departure">
+                <i class="fa fa-3x fa-plane-departure red"></i>
+            </a>
+          </div>
+          <div class="col-md-3 p-2 text-center"><i class="fa fa-3x fa-user"></i></div>
+          <div class="col-md-3 p-2 text-center"><i class="fa fa-3x fa-credit-card"></i></div>
+        </div>
+      </div>
+      <form class="" style="width:60%; margin:auto; ">
+        <div class="container" style="margin-bottom:10px; margin-top:10px; ">
+          <div class="row">
+            <h1 class="" style="margin-left:15px; margin-top:15px;" ng-model="rutePergi">Departure {{rutePergi}} </h1>
+          </div>
+        </div>
+        <div class="container" style="width:90%; background-color:#F9F9F9; margin-bottom: 10px;">
+          <div class="row" ng-repeat="pla in plane track by $index" style="border: 1px solid gray">
+            <div class="col-md-5" >
+              <h3 class="display-4 text-center my-2 mt-3" style="font-size: 20pt">{{pla.plane}}</h3>
+            </div>
+            <div class="col-md-2" >
+              <h4 class="text-center py-3 m-0 mt-0">{{pla.Depart}}</h4>
+              <h6 class="text-danger p-2 m-0 text-center">{{pla.Time}}</h6>
+            </div>
+            <div class="col-md-2" >
+              <h4 class="text-center py-3 m-0 mt-0">{{pla.Arrival}}</h4>
+              <h6 class="text-danger m-0 p-2 text-center">{{pla.Type}}</h6>
+            </div>
+            <div class="my-4 col-md-3" >
+              <a ng-click="departPlane(pla); state1.activeItem=pla.plane" 
+              ng-class="{'active': pla.plane == state1.activeItem}" 
+              class="btn btn-lg btn-block btn-outline-primary" href="#"  style="height:100%; padding-top:16px;padding-bottom:16px;">Rp. {{pla.Price}},00</a>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="margin-bottom:10px; margin-top:10px;" ng-show="returnTrip" >
+          <div class="row">
+            <h1 class="" style="margin-left:15px; margin-top:15px;" ng-model="ruteKembali">Return {{ruteKembali}}</h1>
+          </div>
+        </div>
+        <div class="container" style="width:90%; background-color:#F9F9F9; margin-bottom: 10px;" ng-show="returnTrip">
+            <div class="row" ng-repeat="pla in plane track by $index" style="border: 1px solid gray" >
+              <div class="col-md-5" >
+                <h3 class="display-4 text-center my-2 mt-3" style="font-size: 20pt" >{{pla.plane}}</h3>
+              </div>
+              <div class="col-md-2" >
+                <h4 class="text-center py-3 m-0 mt-0">{{pla.Depart}}</h4>
+                <h6 class="text-danger p-2 m-0 text-center">{{pla.Time}}</h6>
+              </div>
+              <div class="col-md-2" >
+                <h4 class="text-center py-3 m-0 mt-0">{{pla.Arrival}}</h4>
+                <h6 class="text-danger m-0 p-2 text-center">{{pla.Type}}</h6>
+              </div>
+              <div class="my-4 col-md-3">
+                <a ng-click="returnPlane(pla); state2.activeItem=pla.plane " 
+                ng-class="{'active': pla.plane == state2.activeItem}"
+                class="btn btn-lg btn-block btn-outline-primary" href="#"  style="height:100%; padding-top:16px;padding-bottom:16px;">Rp. {{pla.Price}},00</a></div>
+            </div>
+          </div>
+      </form>
+    </div>
+<div >
+  <div class="bg-dark container-fluid">
+    <div class="row rounded">
+      <div class="col-md-4" >
+        <h2 class="mt-2 text-light">Total</h2>
+      </div>
+    <div class="col-md-4" ng-model="totalPrice">
+        <h3 class="text-center my-2 text-light">Rp. {{totalPrice}},00</h3>
+    </div>
+    <div class="col-md-4" >
+      <a class="btn btn-lg btn-block btn-danger w-100 my-1" href="/rincian">Continue</a></div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,129 @@
+
+  <div class="w-100 h-100 py-3" style="background-color:#F1F1F1">
+    <div class="container mb-5">
+      <div class="row">
+          <div class="col-md-3 p-2 text-center">
+              <a href="/">
+                  <i class="fa fa-3x fa-search red" ></i>
+              </a>
+            </div>
+            <div class="col-md-3 p-2 text-center">
+              <a href="/departure">
+                  <i class="fa fa-3x fa-plane-departure red"></i>
+              </a>
+            </div>
+        <div class="col-md-3 p-2 text-center">
+          <a href="/rincian">
+              <i class="fa fa-3x fa-user red"></i>
+          </a>
+        </div>
+        <div class="col-md-3 p-2 text-center">
+          <a href="/confirm">
+            <i class="fa fa-3x fa-credit-card red"></i>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    <form class="" style="width:60%; margin:auto; ">
+      <div class="container" style="margin-bottom:10px; margin-top:10px; ">
+        <div class="row">
+          <h1 class="" style="margin-left:15px; margin-top:15px;">Guest Detail</h1>
+        </div>
+      </div>
+      <div class="container" style="width:90%; background-color:#F9F9F9; margin-bottom: 10px;">
+        <div class="row">
+          <div class="col-md-6" ng-model="givenName">
+            <p> Given Name </p>
+            <h2 style="font-weight:bold;">
+              {{givenName}}
+            </h2>
+          </div>
+          <div class="col-md-6" ng-model="familyName">
+            <p> Family Name </p>
+            <h2 style="font-weight:bold">
+              {{familyName}}
+            </h2>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-md-6" ng-model="dateOfBirth">
+            <p> Date of Birth </p>
+            <h2 style="font-weight:bold">
+              {{dateOfBirth}}
+            </h2>
+          </div>
+          <div class="col-md-6" ng-model="yourGender">
+            <p> Gender </p>
+            <h2 style="font-weight:bold">
+              {{yourGender}}
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-bottom:10px; margin-top:10px;">
+        <div class="row">
+          <h1 class="" style="margin-left:15px; margin-top:15px;">Booking Detail</h1>
+        </div>
+      </div>
+      <div ng-model="origin" ng-model="destination" class="container" style="width:90%; background-color:#F9F9F9; margin-bottom: 10px;">
+        <div class="row">
+          <div class="col-md-6" ng-model="departDate">
+            <p> Depart Date </p>
+            <h2 style="font-weight:bold;">
+              {{departDate}}
+            </h2>
+          </div>
+          <div class="col-md-6"  ng-model="departTimeX" ng-model="arrivalTimeX">
+            <p> {{origin}} {{destination}} </p>
+            <h2 style="font-weight:bold">
+              {{departTimeX}} || {{arrivalTimeX}}
+            </h2>
+          </div>
+        </div>
+        <div class="row" ng-show="round_trip">
+            <div class="col-md-6" ng-model="returnDate">
+              <p> Return Date </p>
+              <h2 style="font-weight:bold;">
+                {{returnDate}}
+              </h2>
+            </div>
+            <div class="col-md-6" ng-model="departTimeY" ng-model="arrivalTimeY" >
+              <p> {{destination}} {{origin}} </p>
+              <h2 style="font-weight:bold">
+                  {{departTimeY}} || {{arrivalTimeY}}
+              </h2>
+            </div>
+          </div>
+      </div>
+      <div class="container" style="margin-bottom:10px; margin-top:10px;">
+        <div class="row">
+          <h1 class="" style="margin-left:15px; margin-top:15px;">Payment</h1>
+        </div>
+      </div>
+      <div class="container" style="width:90%; background-color:#F9F9F9; margin-bottom: 10px;">
+        <div class="row">
+          <div class="col-md-6">
+            <p> Pay to </p>
+            <h2 style="font-weight:bold;">
+              02030405050 a/n UNITED RUSSIA
+            </h2>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="bg-dark container-fluid">
+      <div class="row rounded">
+        <div class="col-md-4" >
+          <h2 class="mt-2 text-light">Total</h2>
+        </div>
+      <div class="col-md-4" ng-model="totalPrice">
+          <h3 class="text-center my-2 text-light">Rp. {{totalPrice}},00</h3>
+      </div>
+      <div class="col-md-4" >
+        <a  class="btn btn-lg btn-block btn-danger w-100 my-1" href="/thx">Continue</a></div>
+      </div>
+    </div>
+  </div>
+  

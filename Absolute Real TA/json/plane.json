@@ -1,0 +1,44 @@
+[
+    {
+		"plane":"East Airlines",
+		"Depart":"10:30",
+		"Arrival":"13:25",
+		"Time":"3h 05m",
+		"Price":500000,
+		"Type":"Direct"
+		
+	},
+    {
+		"plane":"West Airlines",
+		"Depart":"17:30",
+		"Arrival":"23:25",
+		"Time":"6h 05m",
+		"Price":300000,
+		"Type":"Transit"
+		
+	},
+	{
+		"plane":"North Airlines",
+		"Depart":"20:30",
+		"Arrival":"22:25",
+		"Time":"2h 05m",
+		"Price":650000,
+		"Type":"Direct"
+	},
+	{
+		"plane":"South Airlines",
+		"Depart":"00:30",
+		"Arrival":"05:25",
+		"Time":"5h 05m",
+		"Price":400000,
+		"Type":"Transit"
+	},
+	{
+		"plane":"Russian Airlines",
+		"Depart":"08:30",
+		"Arrival":"09:55",
+		"Time":"1h 35m",
+		"Price":900000,
+		"Type":"Direct"
+	}
+]

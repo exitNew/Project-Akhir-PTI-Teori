@@ -1,0 +1,83 @@
+<div class="container py-3" id="mainlogin"> <!--penerbangan-->
+      <div class="row">
+        <div class="bg-white ml-auto border p-3 pr-3 col-md-5">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="display-4"><i class="fa fa-plane fa-fw"></i>Penerbangan</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <form class="">
+                    <div class="form-group row" >
+                            <div class="col-10 col-md-6">
+                              <div class="custom-control custom-radio mt-2">
+                                    <a href="/">
+                                        <input type="radio" id="one-way" name="customRadio" class="custom-control-input"  value="One Way">
+                                        <label class="custom-control-label" for="one-way">One way</label></div>
+                                    </a>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <div class="col-10">
+                                  <div class="custom-control custom-radio mt-2">
+                                        <a href="/round-trip"> 
+                                            <input type="radio" id="round-trip" name="customRadio" class="custom-control-input" checked="checked" value="Round Trip">
+                                            <label class="custom-control-label" for="round-trip">Round Trip</label></div>
+                                          </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                <div class="form-group">
+                  <label>Origin</label>
+                  <select class="form-control" id="origin">
+                    <option value="Select Origin">Select Origin</option>
+                    <option ng-repeat="dest in bandara track by $index" value="{{dest.value}}">{{dest.name}}</option>
+                  </select>
+                  <!--<input type="email" class="form-control" placeholder="Enter email"> 
+                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+                <div class="form-group">
+                  <label>Destinations</label>
+                  <select class="form-control" id="desti">
+                    <option value="Select Destinations">Select Destinations</option>
+                    <option ng-repeat="dest in bandara track by $index" value="{{dest.value}}">{{dest.name}}</option>
+                  </select>
+                  <!--<input type="password" class="form-control" placeholder="Password">-->
+                </div>
+                
+                <div class="form-group">
+                  <label>Departure Date</label>
+                  <input type="date" id="depart-date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Return Date</label>
+                    <input type="date" id="return-date" class="form-control">
+                </div>
+                <a href="/departure">
+                  <button type="submit" class="btn btn-primary form-control" id="Mainbutton" >Submit</button>
+                </a>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="text-white m- col-md-6 col-12">
+          <div class="row m-3">
+            <h1> Borobudur </h1>
+          </div>
+          <div class="row m-3">
+            <p> Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini berlokasi di kurang lebih 100 km di sebelah barat daya Semarang, 86 km disebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta. </p>
+          </div>
+        </div>
+        <!--
+        <div class="col-md-6 text-white mb-1 d-inline-flex">
+          <p class="text-justify m-0 my-5 mx-3 py-5" >Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini berlokasi di kurang lebih 100 km di sebelah barat daya Semarang, 86 km disebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.</p>
+        </div>-->
+      </div>
+    </div>
+
+
+
+

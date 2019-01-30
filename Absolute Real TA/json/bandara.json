@@ -1,0 +1,75 @@
+[
+	{
+		"name":"Ambon (AMQ)",
+		"value":"AMQ"
+	},
+	{
+		"name":"Balikpapan (BPN)",
+		"value":"BPN"
+	},
+	{
+		"name":"Banda Aceh (BTJ)",
+		"value":"BTJ"
+	},
+	{
+		"name":"Bandung (BDO)",
+		"value":"BDO"
+	},
+	{
+		"name":"Bengkulu (BKS)",
+		"value":"BKS"
+	},
+	{
+		"name":"Denpasar (DPS)",
+		"value":"DPS"
+	},
+	{
+		"name":"Jakarta (CGK)",
+		"value":"CGK"
+	},
+	{
+		"name":"Jakarta (HLP)",
+		"value":"HLP"
+	},
+	{
+		"name":"Jayapura (DJJ)",
+		"value":"DJJ"
+	},
+	
+	{
+		"name":"Makassar (UPG)",
+		"value":"UPG"
+	},
+	{
+		"name":"Malang (MLG)",
+		"value":"MLG"
+	},
+	{
+		"name":"Manado (MDC)",
+		"value":"MDC"
+	},
+	{
+		"name":"Medan (KNO)",
+		"value":"KNO"
+	},
+	{
+		"name":"Semarang (SRG)",
+		"value":"SRG"
+	},
+	{
+		"name":"Padang (PDG)",
+		"value":"PDG"
+	},
+	{
+		"name":"Palembang (PLM)",
+		"value":"PLM"
+	},
+	{
+		"name":"Pekanbaru (PKU)",
+		"value":"PKU"
+	},
+	{
+		"name":"Pontianak (PNK)",
+		"value":"PNK"
+	}
+]
